@@ -1,0 +1,50 @@
+#botao-registrar{
+    background-color: #59D559;
+}
+
+#firstimage{
+    max-width: 100%;
+    height: 850px;
+    width: 100%;
+}
+
+#firstsession{
+    position: relative;
+}
+
+#botao-first-session{
+  position: absolute;
+  top: 95%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  background-color: #59D559;
+}
+
+#botao-first-session2{
+    position: absolute;
+    top: 95%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    background-color: #59D559;
+  }
+
+  .siteparagraphs{
+    margin: 20px 0 0 0;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+  }
+
+  .thirdsection{
+    background-color: darkgray;
+    width: 100%;
+    height: 900px;
+  }

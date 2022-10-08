@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- component -->
+<header id="navbar" class="header sticky top-0 bottom-0 bg-white shadow-md flex items-center justify-between px-4 py-00">
+    <!-- logo -->
+    <h1 class="w-3/12">
+        <a href="" class="navbar-image">
+            <img src="img/logo.png" alt="ilha's logo"  class="mr-4 h-5 sm:h-20">
+        </a>
+    </h1>
+
+    <!-- navigation -->
+    <nav class="nav font-semibold text-lg">
+        <ul class="flex items-center">
+            <li class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+              <a href="">Cabo Verde</a>
+            </li>
+            <li class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+              <a href="">Mapa</a>
+            </li>
+            <li class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+              <a href="">Serviços</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- buttons --->
+    <div class="w-3/12 flex justify-end">
+        <a href="#">
+            <button type="button"  id="botao-registrar" class="text-white bg-blue-700 hover:#59D559 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Registrar</button>
+        </a>
+    </div>
+</header>
+
+  <div id="firstsection">
+    <img src="img/maio.jpg" alt="" id="firstimage">
+    <button type="button"  id="botao-first-session" class="text-white bg-blue-700 hover:#59D559 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Registrar</button>
+    <button type="button"  id="botao-first-session2" class="text-white bg-blue-700 hover:#59D559 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Registrar</button>
+  </div>
+
+  <div id="secondsection">
+    <p class="siteparagraphs">
+       <b>Lorem ipsum dolor sit amet. Et modi ullam ut itaque error vel fugiat ducimus nam voluptas voluptas.</b>
+    </p>
+
+    <div id="imagegallery" class="container mx-auto">
+        <div class="grid-cols-3 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-rows-1">
+            <div class="w-full rounded">
+                <img src="img/paisagem1.jpg"
+                    alt="image" width: "792" height: "574">
+            </div>
+            <div class="w-full col-span-2 row-span-2 rounded">
+                <img src="img/paisagem2.jpg"
+                    alt="image" width: "792" height: "574">
+            </div>
+            <div class="w-full rounded">
+                <img src="img/paisagem3.jpg"
+                    alt="image" width: "792" height: "574">
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="thirdsection">
+
+  </div>
+</body>
+</html>
