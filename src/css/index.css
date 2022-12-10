@@ -1,12 +1,19 @@
+html{
+  box-sizing: border-box;
+}
+
 #botao-registrar{
     background-color: #59D559;
 }
 
-#firstimage{
-    max-width: 100%;
-    height: 850px;
-    width: 100%;
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  height: 650px;
 }
+
 
 #firstsession{
     position: relative;
@@ -44,7 +51,42 @@
   }
 
   .thirdsection{
-    background-color: darkgray;
+    background-color: cornsilk;
     width: 100%;
-    height: 900px;
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
+
+  .siteparagraph{
+    padding: 30px 0px 10px 0px;
+    text-align: center;
+    font-size: large;
+    margin-top: 20px;
+  }
+
+  #cards{
+    margin: 20px 30px 10px 30px;
+  }
+
+  .thirdsectioncards{
+    display: flex;
+  }
+
+ 
+
+  .fourthsection{
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+  }
+
+
+  .fifthsection{
+    background-color: cornsilk;
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+  }
+
+  

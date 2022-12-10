@@ -1,0 +1,13 @@
+html{
+    box-sizing: border-box;
+}
+
+#botao-registrar{
+    background-color: #59D559;
+}
+
+#navbar-text{
+    text-align: center;
+    color: #59D559;
+}
+

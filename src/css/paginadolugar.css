@@ -1,0 +1,528 @@
+body{
+    background-color: #ededed;
+    width: 100%;
+}
+
+
+#navbar-text{
+    text-align: center;
+    color: #59D559;
+}
+
+
+h1{
+    float: left;
+    color: black;
+    font-weight: 300;
+    font-size: 1.9em;   
+}
+
+.navbar-text{
+    background-color: white;
+}
+
+#slide-img-dots{
+    margin-bottom: 50px;
+}
+
+
+.lugar-description{
+    margin: 0px 20px 20px 45px;
+    width: 45%;
+    height: auto;
+    float: left;
+    background-color: white;
+    padding: 15px;
+}
+
+.mapa{
+    float: right;
+    width: 45%;
+    margin-right: 45px;
+    background-color: white;
+}
+
+.mapa:hover{
+    box-shadow: 5px 5px #d3d3d3;
+}
+
+#lugar-desc-number-likes{
+    float: right;
+    font-weight: 300;
+    font-size: 1.0em;
+}
+
+#lugar-desc-likes{
+    float: right;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+.foto-perfil-lugar{
+    float: left;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+#lugar-descnome-lugar{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+#lugar-desc-text{
+    font-weight: 200;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+
+#classificacao-lugar{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+
+.estatistica-geral-classificacao{
+    margin: 0px 0px 0px 50px;
+}
+
+.info-classificacoa-geral{
+}
+
+.numero-classificacao-geral{
+    float: left;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.nota-classificacao-geral{
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+#star-active-classificacao{
+    font-size: 0.7em;
+    color: orange;
+}
+
+.classificacao-geral-review-count{
+    font-size: 0.8em;
+}
+
+.classificacao-geral-review-count:hover{
+    color: #59D559;
+}
+
+.mais-info-lugar{
+    margin: 10px 0px 20px 50px;
+}
+
+.num-lugar-na-top{
+    font-size: 0.8em;
+    font-weight: 200;
+    margin: 0px 0px 8px 0px;
+}
+
+.classificacao-especifica{
+    margin: 10px 0px 10px 0px;
+}
+
+.barra-progresso-classificacoes-especificas{
+    float: left;
+    font-size: 0.8em;
+    font-weight: 200;
+    margin-right: 5px;
+}
+
+.desenho-bara-progresso{
+    float: left;
+    height: 22px;
+    width: 100px;
+    background-color: #ededed;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.bara-progresso-completion{
+    width: 80%;
+    height: 22px;
+    border-radius: 10px;
+    background-color: #59D559;
+}
+
+.facilidades-lugar{
+    margin: 0px 0px 0px 50px;
+}
+
+.titulo-facilidades-lugar{
+    font-size: 1em;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.facilidades-lugar-figura{
+    display: inline;
+    margin-right: 40px;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+#lugar-desc-text{
+}
+
+.resultado-classificacao-especifica{
+    font-size: 0.9em;
+    font-weight: 200;
+}
+
+#lugar-desc-criticas{
+    font-weight: 300;
+    font-size: 1.0em;
+}
+
+#lugar-desc-criticas:hover{
+    color: #59D559;
+    text-decoration: underline;
+}
+
+
+#lugar-desc-likes:hover{
+   text-decoration: underline;
+   color: #59D559;
+}
+
+#botao-contactar-lugar{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#lugar-desc-criticas:hover{
+    text-decoration: underline;
+}
+
+.critics-section{
+    float: left;
+    margin: 0px 20px 30px 45px;
+    width: 45%;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.recommendations-section{
+    float: right;
+    width: 45%;
+    height: auto;
+    margin-right: 45px;
+}
+
+#critics-ver-mais{
+    float: right;
+    font-weight: 200;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#critics-ver-mais:hover{
+    text-decoration: underline;
+    color: #59D559;
+}
+
+.para-titulo-critics-section{
+    margin-bottom: 60px;
+}
+
+.titulo-opiniao-visitantes{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.person-critics{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.person-critics-image{
+    float: left;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.critiquer-name{
+    font-weight: 400;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+
+.critics-justification-text{
+    font-weight: 200;
+    font-size: 0.9em;
+    margin-bottom: 3px;
+    margin-left: 40px;
+}
+
+.date-of-critics{
+    font-size: 0.9em;
+    font-weight: 100;
+    margin-left: 40px;
+}
+
+#star-active{
+    color: orange;
+}
+
+/* CARDS DE LUGARES RECOMENDADOS */
+
+.recommendations-section{
+    background-color: #ededed;
+}
+
+.card-lugares-recomendados{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.card-lugares-recomendados:hover{
+    box-shadow: 5px 5px #d3d3d3;
+}
+
+.imagem-lugar-recomendado{
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+}
+
+.info-lugar-recomendado{
+}
+
+#icon-like-lugar{
+    float: right;
+    margin-right: 10px;
+    font-size: 3em;
+    color: #59D559;
+}
+
+#icon-like-lugar:hover{
+    font-size: 3.5em;
+}
+
+.nome-lugar-recomendado{
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.localizacao-lugar{
+    font-size: 1.0em;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+#classificao-geral-lugar-recomendado{
+    font-weight: 200;
+}
+
+.horario-lugar{
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+#botao-ver-lugar-recomendado{
+}
+
+#icone-location{
+
+}
+
+#titulo-sessao-recomendacoes{
+    font-size: 1.4em;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.mais-info-section{
+    float: left;
+    width: 44.5%;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+}
+
+.pergunta-resposta-mais-info-section{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.titulo-mais-info-section{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.pergunta-mais-info-lugar{
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.resposta-mais-info-lugar{
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+#img-carrousel{
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* MODALS */
+
+.modal-likes-lugar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-likes-lugar-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+.modal-ver-criticas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content-ver-criticas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 40rem;
+    border-radius: 0.5rem;
+}
+
+.close-button1 {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button1:hover {
+    background-color: darkgray;
+}
+
+.show-modal1 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.gostos-lugar-modal{
+    margin: 35px 0px 20px 0px;
+}
+
+.img-gostos-lugar-modal{
+    float: left;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    margin-right: 10px;
+}
+
+#botao-ver-perfil{
+    float: right;
+    width: 80px;
+    margin-top: -6px;
+}
+
+
+.modal-cards-criticas-visitantes{
+    margin: 20px 0px 0px 0px;
+}
+
+.itens-feedback-critica{
+    margin-left: 40px;
+}
+
+.pergunta-feedback-critics{
+    font-weight: 300;
+    margin-right: 15px;
+}
+
+.date-of-critics-feedback{
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.feedback-critica-user{
+    margin-right: 20px;
+    font-weight: 200;
+}
+

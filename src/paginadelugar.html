@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title></title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="icons/fontawesome-free-6.2.0-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/paginadolugar.css" />
+  </head>
+  <body>
+
+    <nav
+      class="bg-white border-gray-400 px-4 sm:px-4 py-2.5 rounded "
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="#" class="flex items-center">
+          <img
+            src="img/logo.png"
+            class="mr-4 h-5 sm:h-20"
+            alt="Flowbite Logo"
+          />
+          <span
+            id="navbar-text"
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >Ilha</span
+          >
+        </a>
+        <div class="flex items-center md:order-2">
+          <button
+            type="button"
+            class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 "
+            id="user-menu-button"
+            aria-expanded="false"
+            data-dropdown-toggle="user-dropdown"
+            data-dropdown-placement="bottom"
+          >
+            <span class="sr-only">Menu Utilisador</span>
+            <img
+              class="w-8 h-8 rounded-full"
+              src="img/eu.jpg"
+              alt="user photo"
+            />
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100  dark:bg-gray-700 dark:divide-gray-600"
+            id="user-dropdown"
+            data-popper-reference-hidden=""
+            data-popper-escaped=""
+            data-popper-placement="bottom"
+            style="
+              position: absolute;
+              inset: 0px auto auto 0px;
+              margin: 0px;
+              transform: translate(0px, 322px);
+            "
+          >
+            <div class="py-3 px-4">
+              <span class="block text-sm text-gray-900 dark:text-white"
+                >Ivaldir Batalha</span
+              >
+              <span
+                class="block text-sm font-medium text-gray-500 truncate dark:text-gray-400"
+                >ivalbat1@gmail.com</span
+              >
+            </div>
+            <ul class="py-1" aria-labelledby="user-menu-button">
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Perfil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Mapa</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Definições</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Sair</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            data-collapse-toggle="mobile-menu-2"
+            type="button"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="mobile-menu-2"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Abrir menu principal</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+          id="mobile-menu-2"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4   md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent md:text-green-400 md:p-0 dark:text-white"
+                aria-current="page"
+                >Mapa</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                id="navbar-text"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Lugares</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br>
+
+    <!--<img src="img/photorest.jpeg" alt="fotobistro" class="photo-bistro">-->
+
+    <div class="relative w-[1200px] mx-auto">
+      <div class="slide relative">
+          <img id="img-carrousel" class="w-full h-[500px] object-cover"
+              src="img/photorest.jpeg">
+          <div class="absolute bottom-0 w-full px-5 py-3 text-center text-white"></div>
+      </div>
+
+      <div class="slide relative">
+          <img class="w-full h-[500px] object-cover"
+              src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg">
+          <div class="absolute bottom-0 w-full px-5 py-3 text-center text-white"></div>
+      </div>
+
+      <div class="slide relative">
+          <img class="w-full h-[500px] object-cover"
+              src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
+          <div class="absolute bottom-0 w-full px-5 py-3  text-center text-white">
+          </div>
+      </div>
+
+      <!-- The previous button -->
+      <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+          onclick="moveSlide(-1)">❮</a>
+
+      <!-- The next button -->
+      <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+          onclick="moveSlide(1)">❯</a>
+
+  </div>
+  <br>
+
+  <!-- The dots -->
+  <div class="flex justify-center items-center space-x-5" id="slide-img-dots">
+      <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+      <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+      <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+  </div>
+
+  <!-- Javascript code -->
+  <script>
+      // set the default active slide to the first one
+      let slideIndex = 1;
+      showSlide(slideIndex);
+
+      // change slide with the prev/next button
+      function moveSlide(moveStep) {
+          showSlide(slideIndex += moveStep);
+      }
+
+      // change slide with the dots
+      function currentSlide(n) {
+          showSlide(slideIndex = n);
+      }
+
+      function showSlide(n) {
+          let i;
+          const slides = document.getElementsByClassName("slide");
+          const dots = document.getElementsByClassName('dot');
+          
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+
+          // hide all slides
+          for (i = 0; i < slides.length; i++) {
+              slides[i].classList.add('hidden');
+          }
+
+          // remove active status from all dots
+          for (i = 0; i < dots.length; i++) {
+              dots[i].classList.remove('bg-orange-400');
+              dots[i].classList.add('bg-green-400');
+          }
+
+          // show the active slide
+          slides[slideIndex - 1].classList.remove('hidden');
+
+          // highlight the active dot
+          dots[slideIndex - 1].classList.remove('bg-green-300');
+          dots[slideIndex - 1].classList.add('bg-orange-400');
+      }
+  </script>
+
+    <div class="lugar-description">
+      <img class="foto-perfil-lugar" src="img/photorest.jpeg" alt="">
+      <button href=""  class="triggerCriticas" id="lugar-desc-number-likes"> <h2 id="lugar-desc-likes">Likes (12) </h2></button>
+      <h1 id="lugar-descnome-lugar">
+        Nome do lugar
+      </h1>
+      <p id="classificacao-lugar">
+        Classificação geral<i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star"></i>
+      </p> 
+
+      <div class="estatistica-geral-classificacao">
+        <p class="numero-classificacao-geral">4.5</p>
+        <div class="info-classificacoa-geral">
+          <p class="nota-classificacao-geral">Excelente</p>
+          <i class="fa-solid fa-star" id="star-active-classificacao"></i><i class="fa-solid fa-star" id="star-active-classificacao"></i><i class="fa-solid fa-star" id="star-active-classificacao"></i><i class="fa-solid fa-star" id="star-active-classificacao"></i><i class="fa-solid fa-star" id="star-active-classificacao"></i> 
+          <a href="#reviews-de-visitantes" id="" class=""><span class="classificacao-geral-review-count"> (3) Reviews</span></a>
+        </div>
+      </div>
+
+      <div class="mais-info-lugar">
+        <p class="num-lugar-na-top">#2 melhor entre 45 lugares em Praia, Santiago</p>
+        <div class="classificacao-especifica"><span class="barra-progresso-classificacoes-especificas">Localização </span> <div class="desenho-bara-progresso" style=" margin-left: 15px;"><div class="bara-progresso-completion"></div></div> <span class="resultado-classificacao-especifica"> 4.8</span></div>
+        <div class="classificacao-especifica"><span class="barra-progresso-classificacoes-especificas">Serviço </span> <div class="desenho-bara-progresso" style=" margin-left: 40px;"><div class="bara-progresso-completion" ></div></div> <span class="resultado-classificacao-especifica"> 4.8</span></div>
+        <div class="classificacao-especifica"><span class="barra-progresso-classificacoes-especificas">Valor </span> <div class="desenho-bara-progresso" style=" margin-left: 53.5px;"><div class="bara-progresso-completion"></div></div> <span class="resultado-classificacao-especifica"> 4.8</span></div>
+        <div class="classificacao-especifica"><span class="barra-progresso-classificacoes-especificas">Organização </span> <div class="desenho-bara-progresso" style=" margin-left: 10px;"><div class="bara-progresso-completion"></div></div> <span class="resultado-classificacao-especifica"> 4.8</span></div>
+      </div>
+
+      <div class="facilidades-lugar">
+        <p class="titulo-facilidades-lugar"> Facilidades </p>
+        <span class="facilidades-lugar-figura"> <i class="fa-solid fa-wifi"></i> Wifi grátis</span>
+        <span class="facilidades-lugar-figura"><i class="fa-solid fa-person-swimming"></i> Piscina</span>
+        <span class="facilidades-lugar-figura"><i class="fa-solid fa-utensils"></i> Restaurante</span>
+        <span class="facilidades-lugar-figura"><i class="fa-solid fa-utensils"></i> Restaurante</span>
+        <span class="facilidades-lugar-figura"><i class="fa-solid fa-utensils"></i> Restaurante</span>
+        <span class="facilidades-lugar-figura"><i class="fa-solid fa-utensils"></i> Restaurante</span>
+      </div>
+
+      <p id="lugar-desc-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+      </p>
+      <button id="botao-contactar-lugar" class="bg-green-400 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
+        Conversar
+      </button>
+    </div>
+
+   <!-- MODAL DE VER LIKES DE LUGAR -->
+
+   <div class="modal-likes-lugar">
+       <div class="modal-likes-lugar-content">
+           <span class="close-button">&times;</span>
+           <h1>Gostos do lugar</h1>
+           <br>
+          <div class="gostos-lugar-modal">
+            <button id="botao-ver-perfil" class="bg-green-400 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
+              Perfil
+            </button>
+            <img src="img/eu.jpg" class="img-gostos-lugar-modal" alt="">
+            <a href="#"><h2>Ivaldir Batalha</h2></a>
+          </div>
+
+          <div class="gostos-lugar-modal">
+            <button id="botao-ver-perfil" class="bg-green-400 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
+              Perfil
+            </button>
+            <img src="img/eu.jpg" class="img-gostos-lugar-modal" alt="">
+            <a href="#"><h2>Ivaldir Batalha</h2></a>
+          </div>
+
+          <div class="gostos-lugar-modal">
+            <button id="botao-ver-perfil" class="bg-green-400 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
+              Perfil
+            </button>
+            <img src="img/eu.jpg" class="img-gostos-lugar-modal" alt="">
+            <a href="#"><h2>Ivaldir Batalha</h2></a>
+          </div>
+       </div>
+   </div>
+
+   <script>
+    const modal = document.querySelector(".modal-likes-lugar");
+    const trigger = document.querySelector(".triggerCriticas");
+    const closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+ </script>
+
+
+  <aside class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15420.289403747523!2d-23.511641351574696!3d14.933061949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2scv!4v1669896066737!5m2!1spt-PT!2scv" width="580px" height="610px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </aside>
+
+    <div class="critics-section">
+      <div class="para-titulo-critics-section">
+        <h1  class="titulo-opiniao-visitantes" id="reviews-de-visitantes">Opinião dos visitantes</h1>
+        <button href="#" id="critics-ver-mais" class="trigger-ver-criticas"> Ver todas</button>
+      </div>
+      <div class="person-critics">
+        <img src="img/eu.jpg" class="person-critics-image" alt="">
+        <h2><a href="#" class="critiquer-name">Ivaldir Batalha</a> <i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star"></i> <a href="#" id="person-star-criticas"></a>
+        </h2>
+        <p class="critics-justification-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+        </p>
+        <p class="date-of-critics"> 4 meses atrás </p>
+      </div>
+
+      <div class="person-critics">
+        <img src="img/eu.jpg" class="person-critics-image" alt="">
+        <h2><a href="#" class="critiquer-name">Ivaldir Batalha</a>  <i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star"></i> <a href="#" id="person-star-criticas"></a>
+        </h2>
+        <p class="critics-justification-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+        </p>
+        <p class="date-of-critics"> 4 meses atrás </p>
+      </div>
+
+      <div class="person-critics">
+        <img src="img/eu.jpg" class="person-critics-image" alt="">
+        <h2><a href="#" class="critiquer-name">Ivaldir Batalha</a>  <i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i> <a href="#" id="person-star-criticas"></a>
+        </h2>
+        <p class="critics-justification-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+        </p>
+        <p class="date-of-critics"> 4 meses atrás </p>
+      </div>
+    </div>
+
+  <!-- MODAL DE VER TODAS AS CRITICAS -->
+
+  <div class="modal-ver-criticas">
+    <div class="modal-content-ver-criticas">
+        <span class="close-button1">&times;</span>
+        <h1>Criticas dos visitantes</h1>
+        <br>
+
+        <div class="modal-cards-criticas-visitantes">
+          <img src="img/eu.jpg" class="person-critics-image" alt="">
+          <h2><a href="#" class="critiquer-name">Ivaldir Batalha</a>  <i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i> <a href="#" id="person-star-criticas"></a><span class="date-of-critics-feedback"> 4 meses atrás </span>
+          </h2>
+          <p class="critics-justification-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+          </p>
+          <div class="itens-feedback-critica">
+            <span class="pergunta-feedback-critics">Está crítica foi útil?</span> <a href=""><i class="fa-regular fa-thumbs-up"></i> <span class="feedback-critica-user">Sim</span></a>  <a href=""><i class="fa-regular fa-thumbs-down"></i> <span class="feedback-critica-user">Não</span></a> 
+          </div>
+        </div>
+
+        <div class="modal-cards-criticas-visitantes">
+          <img src="img/eu.jpg" class="person-critics-image" alt="">
+          <h2><a href="#" class="critiquer-name">Ivaldir Batalha</a>  <i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i> <a href="#" id="person-star-criticas"></a><span class="date-of-critics-feedback"> 4 meses atrás </span>
+          </h2>
+          <p class="critics-justification-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+          </p>
+          <div class="itens-feedback-critica">
+            <span class="pergunta-feedback-critics">Está crítica foi útil?</span> <a href=""><i class="fa-regular fa-thumbs-up"></i> <span class="feedback-critica-user">Sim</span></a>  <a href=""><i class="fa-regular fa-thumbs-down"></i> <span class="feedback-critica-user">Não</span></a> 
+          </div>
+        </div>
+
+        <div class="modal-cards-criticas-visitantes">
+          <img src="img/eu.jpg" class="person-critics-image" alt="">
+          <h2><a href="#" class="critiquer-name">Ivaldir Batalha</a>  <i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i> <a href="#" id="person-star-criticas"></a><span class="date-of-critics-feedback"> 4 meses atrás </span>
+          </h2>
+          <p class="critics-justification-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+          </p>
+          <div class="itens-feedback-critica">
+            <span class="pergunta-feedback-critics">Está crítica foi útil?</span> <a href=""><i class="fa-regular fa-thumbs-up"></i> <span class="feedback-critica-user">Sim</span></a>  <a href=""><i class="fa-regular fa-thumbs-down"></i> <span class="feedback-critica-user">Não</span></a> 
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    const modal1 = document.querySelector(".modal-ver-criticas");
+    const trigger1 = document.querySelector(".trigger-ver-criticas");
+    const closeButton1 = document.querySelector(".close-button1");
+
+    function toggleModal1() {
+        modal1.classList.toggle("show-modal1");
+    }
+
+    function windowOnClick1(event) {
+        if (event.target === modal1) {
+            toggleModal1();
+        }
+    }
+
+    trigger1.addEventListener("click", toggleModal1);
+    closeButton1.addEventListener("click", toggleModal1);
+    window.addEventListener("click", windowOnClick1);
+  </script>
+
+  <aside class="recommendations-section">
+    <div class="titulo-sessao-recomend">
+      <p id="titulo-sessao-recomendacoes">Recomendações</p>
+    </div>
+
+    <div class="card-lugares-recomendados">
+      <img class="imagem-lugar-recomendado" src="img/photorest.jpeg" alt="">
+      <div class="info-lugar-recomendado">
+        <a href=""><i id="icon-like-lugar" class="fa-solid fa-heart"></i></a>
+        <p class="nome-lugar-recomendado">Nome do lugar</p>
+        <p id="classificao-geral-lugar-recomendado">
+          Classificação <i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star"></i> 
+        </p> 
+        <p class="localizacao-lugar">Praia, Santiago <i id="icone-location" class="fa-solid fa-location-dot"></i></p>
+        <p class="horario-lugar">Horário: 08:00 am - 01:00 pm</p>
+      </div>
+      <button id="botao-ver-lugar-recomendado" class="bg-green-400 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
+        Ver
+      </button>
+      <button id="botao-ver-lugar-recomendado" class="bg-green-400 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
+        Eventos
+      </button>
+    </div>
+
+    <div class="card-lugares-recomendados">
+      <img class="imagem-lugar-recomendado" src="img/photorest.jpeg" alt="">
+      <div class="info-lugar-recomendado">
+        <a href=""><i id="icon-like-lugar" class="fa-solid fa-heart"></i></a>
+        <p class="nome-lugar-recomendado">Nome do lugar</p>
+        <p id="classificao-geral-lugar-recomendado">
+          Classificação <i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star"></i> 
+        </p> 
+        <p class="localizacao-lugar">Praia, Santiago <i id="icone-location" class="fa-solid fa-location-dot"></i></p>
+        <p class="horario-lugar">Horário: 08:00 am - 01:00 pm</p>
+      </div>
+      <button id="botao-ver-lugar-recomendado" class="bg-green-400 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
+        Ver
+      </button>
+      <button id="botao-ver-lugar-recomendado" class="bg-green-400 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
+        Eventos
+      </button>
+    </div>
+
+    <div class="card-lugares-recomendados">
+      <img class="imagem-lugar-recomendado" src="img/photorest.jpeg" alt="">
+      <div class="info-lugar-recomendado">
+        <a href=""><i id="icon-like-lugar" class="fa-solid fa-heart"></i></a>
+        <p class="nome-lugar-recomendado">Nome do lugar</p>
+        <p id="classificao-geral-lugar-recomendado">
+          Classificação <i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star" id="star-active"></i><i class="fa-solid fa-star"></i> 
+        </p> 
+        <p class="localizacao-lugar">Praia, Santiago <i id="icone-location" class="fa-solid fa-location-dot"></i></p>
+        <p class="horario-lugar">Horário: 08:00 am - 01:00 pm</p>
+      </div>
+      <button id="botao-ver-lugar-recomendado" class="bg-green-400 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
+        Ver
+      </button>
+      <button id="botao-ver-lugar-recomendado" class="bg-green-400 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
+        Eventos
+      </button>
+    </div>
+  </aside>
+
+  <div class="mais-info-section">
+
+    <p class="titulo-mais-info-section"> Perguntas frequentes sobre o lugar</p>
+
+    <div class="pergunta-resposta-mais-info-section">
+      <p class="pergunta-mais-info-lugar">Qual o melhor prato servido no lugar?</p>
+      <p class="resposta-mais-info-lugar">O melhor prato servido no lugar, de acordo com os clientes, é a cachupa refogada, aconpanhada
+        de ovos e linguiça, um prato bem tradicional de cabo verde.
+      </p>
+    </div>
+
+    <div class="pergunta-resposta-mais-info-section">
+      <p class="pergunta-mais-info-lugar">Qual o melhor prato servido no lugar?</p>
+      <p class="resposta-mais-info-lugar">O melhor prato servido no lugar, de acordo com os clientes, é a cachupa refogada, aconpanhada
+        de ovos e linguiça, um prato bem tradicional de cabo verde.
+      </p>
+    </div>
+
+    <div class="pergunta-resposta-mais-info-section">
+      <p class="pergunta-mais-info-lugar">Qual o melhor prato servido no lugar?</p>
+      <p class="resposta-mais-info-lugar">O melhor prato servido no lugar, de acordo com os clientes, é a cachupa refogada, aconpanhada
+        de ovos e linguiça, um prato bem tradicional de cabo verde.
+      </p>
+    </div>
+
+    <div class="pergunta-resposta-mais-info-section">
+      <p class="pergunta-mais-info-lugar">Qual o melhor prato servido no lugar?</p>
+      <p class="resposta-mais-info-lugar">O melhor prato servido no lugar, de acordo com os clientes, é a cachupa refogada, aconpanhada
+        de ovos e linguiça, um prato bem tradicional de cabo verde.
+      </p>
+    </div>
+
+
+    <div class="pergunta-resposta-mais-info-section">
+      <p class="pergunta-mais-info-lugar">Qual o melhor prato servido no lugar?</p>
+      <p class="resposta-mais-info-lugar">O melhor prato servido no lugar, de acordo com os clientes, é a cachupa refogada, aconpanhada
+        de ovos e linguiça, um prato bem tradicional de cabo verde.
+      </p>
+    </div>
+    
+
+  </div>
+  
+  <footer
+    id="footer"
+    class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 relative"
+    style="width: 100%; left: 0; margin-top: 20px;"
+  >
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+      >© 2022 <a href="#" class="hover:underline">Ilha</a>. All Rights
+      Reserved.
+    </span>
+    <ul
+      class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0"
+    >
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6">Sobre</a>
+      </li>
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6"
+          >Política de privacidade</a
+        >
+      </li>
+      <li>
+        <a href="#" class="hover:underline">Contacto</a>
+      </li>
+    </ul>
+  </footer>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+#navbar-text{
+    text-align: center;
+    color: #59D559;
+}
+
+#input-procura{
+    margin: 50px 30px 50px 30px;
+}
+
+.opcoes{
+    margin: 50px 30px 30px 30px;
+}
+
+
+.resultados-texto{
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.sugestao-lugares-cards{
+    display: flex;
+    margin: 20px 30px 50px 30px;
+    height: 390px;
+}
+
+#cards{
+    margin: 0px 30px 20px 30px;
+}
+
+#rating{
+    margin-left: 130px;
+}
+
+.checked {
+    color: orange;
+}
+
+.lugares-gostados{
+    margin: 50px 30px 50px 30px;
+}
+
+.lugares-gostados-cards{
+    margin: 60px 0px 30px 0px;
+}
+
+#botao-like{
+    font-size: 30px;
+    margin-left: 160px;
+}
+
+#botao-liked{
+    font-size: 30px;
+    margin-left: 160px;
+    color: #59D559;
+}

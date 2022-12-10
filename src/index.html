@@ -6,12 +6,62 @@
   <link href="../dist/output.css" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="icons/fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet">
+  <style type="text/css">
+    .card{
+    background-color: #fff;
+    transition: box-shadow 0.3s ease-in-out;
+    }
+    .card:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    h1{
+    text-align: center;
+    font-size: 26px;
+    padding-top: 10px;
+    color:#576574;
+    }
+    hr{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    height: 1px;
+    background: #000;
+    }
+    p.text-base{
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    color: #8395a7;
+    }
+    
+    .fa{
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: #576574;
+    }
+
+    .fa-solid{
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: #576574;
+    }
+
+    @media(max-width: 430px){
+      .card{
+        margin: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- component -->
+<!--Navbar section-->
 <header id="navbar" class="header sticky top-0 bottom-0 bg-white shadow-md flex items-center justify-between px-4 py-00">
-    <!-- logo -->
     <h1 class="w-3/12">
         <a href="" class="navbar-image">
             <img src="img/logo.png" alt="ilha's logo"  class="mr-4 h-5 sm:h-20">
@@ -33,24 +83,25 @@
         </ul>
     </nav>
 
-    <!-- buttons --->
+    <!-- navbar buttons --->
     <div class="w-3/12 flex justify-end">
         <a href="#">
             <button type="button"  id="botao-registrar" class="text-white bg-blue-700 hover:#59D559 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Registrar</button>
+            <button type="button"  id="botao-registrar" class="text-white bg-blue-700 hover:#59D559 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Login</button>
         </a>
     </div>
 </header>
 
+
   <div id="firstsection">
-    <img src="img/maio.jpg" alt="" id="firstimage">
-    <button type="button"  id="botao-first-session" class="text-white bg-blue-700 hover:#59D559 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Registrar</button>
-    <button type="button"  id="botao-first-session2" class="text-white bg-blue-700 hover:#59D559 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Registrar</button>
+      <video autoplay muted loop id="videobackground">
+        <source src="videos/BEST OF SAL, Cabo Verde _ Cape Verde _  Drone 4K.mp4" type="video/mp4">
+      </video>
   </div>
 
   <div id="secondsection">
     <p class="siteparagraphs">
-       <b>Lorem ipsum dolor sit amet. Et modi ullam ut itaque error vel fugiat ducimus nam voluptas voluptas.</b>
-    </p>
+       Conheça o melhor das ilhas de Cabo Verde e desfrute da morabeza local com as maravilhas ofereçidas pela natureza .
 
     <div id="imagegallery" class="container mx-auto">
         <div class="grid-cols-3 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-rows-1">
@@ -72,7 +123,127 @@
   </div>
 
   <div class="thirdsection">
+      <p class="siteparagraph">
+         Aproveite para visitar e conheçer os diferentes tipos de lugares e estabelecimentos disponíveis.
+      </p>
 
+      <div class="thirdsectioncards">
+        <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700" id="cards">
+          <a href="#">
+              <img class="rounded-t-lg" src="img/paisagem1.jpg" alt="" />
+          </a>
+          <div class="p-5">
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Praias de mar</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Conheça as lindas praias de mar situadas em Tarrafal, Santiago.</p>
+              
+          </div>
+      </div>
+      
+      <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700" id="cards">
+        <a href="#">
+            <img class="rounded-t-lg" src="img/paisagem2.jpg" alt="" />
+        </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cidade Velha</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Vários atributos históricos importantes na época da colonização e escravatura.</p>
+            
+        </div>
+    </div>
+
+    <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700" id="cards">
+      <a href="#">
+          <img class="rounded-t-lg" src="img/paisagem3.jpg" alt="" />
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mercado municipal do plateau</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Mercado principal na praia, onde possa encontrar desde frutas, verduras e muito mais.</p>
+      </div>
+
+    </div>  
+  </div>  
+</div>  
+
+  
+
+<div class="fourthsection">
+
+  <p class="siteparagraph">
+    Lorem ipsum dolor sit amet. Et modi ullam ut itaque error vel fugiat ducimus nam voluptas voluptas.
+ </p>
+
+  <div class="container mx-auto flex flex-wrap my-8 justify-center">
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="max-w-sm rounded overflow-hidden shadow-xl cursor-pointer rounded card" id="serviceinfocards" >
+        <div class="px-6 py-4">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h1 class="font-bold mb-2">Service 1</h1>
+          <hr>
+          <p class=" text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+          </p>
+        </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-xl cursor-pointer rounded card">
+        <div class="px-6 py-4">
+          <i class="fa-solid fa-utensils"></i>
+          <h1 class="font-bold mb-2">Service 2</h1>
+          <hr>
+          <p class=" text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+          </p>
+        </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-xl cursor-pointer rounded card">
+        <div class="px-6 py-4">
+          <i class="fa-solid fa-hotel"></i>
+          <h1 class="font-bold mb-2">Service 3</h1>
+          <hr>
+          <p class=" text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+<div class="fifthsection">
+  <p class="siteparagraph">
+    Lorem ipsum dolor sit amet. Et modi ullam ut itaque error vel fugiat ducimus nam voluptas voluptas.
+  </p>
+
+
+  Lugar para o mapa do site
+
+</div>
+
+
+<!--
+  Website footer section
+-->
+<footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+  <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="#" class="hover:underline">Ilha</a>. All Rights Reserved.
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6 ">Sobre</a>
+      </li>
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Política de privacidade</a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline">Contacto</a>
+      </li>
+  </ul>
+</footer>
+
 </body>
 </html>
+
+
