@@ -2,8 +2,35 @@ html{
   box-sizing: border-box;
 }
 
-#botao-registrar{
-    background-color: #59D559;
+label.logo{
+  color: #59D559;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 858px){
+  .navbar-menus{
+    font-size: 14px;
+  }
+
+  #botao-registrar{
+    width: 80px;
+    height: 50px;
+  }
+}
+
+.botao-registro-login{
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.botao-registro-login:hover{
+  font-size: 19px;
+  color: #59D559;
+  transition: .3s;
 }
 
 #myVideo {
